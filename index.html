@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+<body>
+ 
+    <div id="main">
+        <button id="muteButton">
+    <i class="fas fa-volume-up" id="speakerIcon"></i> 
+</button>
+
+        <audio id="backgroundMusic" loop>
+            <source src="assets/9E8C7YR-retro-game-game-over.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <i id="musicIcon" class="fas fa-music"></i>
+        <audio id="sound" >
+            <source src="assets/bubble-sound-43207.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+
+        <div id="panel">
+          <div id="ptop">
+            <button id="play"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+              </svg>Play Game</button>
+              
+            <div class="elem">
+                <h2>Hit</h2>
+                <div id="hitval" class="box">5</div>
+            </div>
+            <div class="elem">
+                <h2>Timer</h2>
+                <div id="timerval" class="box">60</div>
+            </div>
+            <div class="elem">
+                <h2>Score</h2>
+                <div id="scoreval" class="box">0</div>
+            </div>
+          </div>
+          <div id="pbtm">
+           
+          </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
